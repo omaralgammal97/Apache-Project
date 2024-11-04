@@ -1,7 +1,0 @@
-AuthType Basic
-AuthName "Private Area"
-AuthUserFile /etc/httpd/conf/.htpasswd-{{ hostname }}
-Require valid-user
-{% if allowed_ip is defined %}
-Require ip {{ allowed_ip }}
-{% endif %}
