@@ -94,7 +94,7 @@ ansible-galaxy collection install community.general
 ```ini
 # inventory/hosts
 [webservers]
-webserver1 ansible_host=192.168.1.10
+webserver1 ansible_host=192.168.192.10
 ```
 
 ### 2. Group Variables
@@ -104,7 +104,7 @@ apache_log_dir: /var/log/httpd
 apache_user: apache
 apache_group: apache
 selinux_port: 88
-allowed_ip: "192.168.1.100"
+allowed_ip: "192.168.192.100"
 ```
 
 ### 3. Virtual Hosts
